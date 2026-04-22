@@ -58,12 +58,6 @@ It brings together essential academic resources, practical tips, and support sys
 
 ---
 
-## 📷 Preview
-
-> Add screenshots of your website here
-
----
-
 ## 💡 Future Improvements
 
 - Add interactive features  
