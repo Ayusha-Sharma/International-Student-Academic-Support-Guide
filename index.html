@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WSU International Student Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">International Student Academic Support Guide<span> WSU</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="resources.html">Academic Resources</a></li>
+      <li><a href="wellness.html">Wellness And Campus Connection</a></li>
+      <li><a href="pac.html">PAC Guide</a></li>
+      <li><a href="tools.html">Helpful Tools</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Wright State University · International Student Guide</div>
+      <h1 class="hero-title">You Belong Here.<br/><em>Let's Navigate It Together.</em></h1>
+      <p class="hero-sub">A practical, student-built guide to help international students understand U.S. college academics, available resources, and support systems — made by someone who's been in your shoes.</p>
+      <div class="hero-ctas">
+        <a href="resources.html" class="btn btn-primary">Explore Resources →</a>
+        <a href="pac.html" class="btn btn-ghost">What is PAC?</a>
+      </div>
+    </div>
+    <div class="hero-cards">
+      <div class="floating-card" style="--d:0s">
+        <div class="fc-icon">📚</div>
+        <div class="fc-label">Academic Support</div>
+      </div>
+      <div class="floating-card" style="--d:0.3s">
+        <div class="fc-icon">🌿</div>
+        <div class="fc-label">Wellness & Belonging</div>
+      </div>
+      <div class="floating-card" style="--d:0.6s">
+        <div class="fc-icon">🎯</div>
+        <div class="fc-label">PAC Coaching</div>
+      </div>
+      <div class="floating-card" style="--d:0.9s">
+        <div class="fc-icon">🛠</div>
+        <div class="fc-label">Helpful Tools</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTIONS OVERVIEW -->
+  <section class="overview">
+    <div class="container">
+      <div class="section-label">What's Inside</div>
+      <h2 class="section-heading">Everything you need, <em>in one place.</em></h2>
+      <div class="cards-grid">
+        <a href="resources.html" class="card">
+          <div class="card-num">01</div>
+          <div class="card-icon">📘</div>
+          <h3>Academic Resources</h3>
+          <p>Tutoring, writing centers, advising, UCIE support, on-campus jobs, and more — explained clearly for international students.</p>
+          <div class="card-arrow">→</div>
+        </a>
+        <a href="wellness.html" class="card">
+          <div class="card-num">02</div>
+          <div class="card-icon">🌿</div>
+          <h3>Wellness & Engagement</h3>
+          <p>Counseling services, cultural student orgs, and ways to build community on campus when everything feels new.</p>
+          <div class="card-arrow">→</div>
+        </a>
+        <a href="pac.html" class="card">
+          <div class="card-num">03</div>
+          <div class="card-icon">🎯</div>
+          <h3>PAC / E-PAC Guide</h3>
+          <p>What Peer Academic Coaching really is, how to use it, and why academic integrity matters more than you think.</p>
+          <div class="card-arrow">→</div>
+        </a>
+        <a href="tools.html" class="card">
+          <div class="card-num">04</div>
+          <div class="card-icon">🛠</div>
+          <h3>Helpful Tools</h3>
+          <p>Motivation, note-taking strategies, study techniques, financial basics, and downloadable planners.</p>
+          <div class="card-arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE / HUMAN TOUCH -->
+  <section class="quote-section">
+    <div class="container">
+      <blockquote>
+        "Coming from Nepal, I didn't know what to expect. This guide is the resource I wish I had when I first arrived — built by a student, for students."
+      </blockquote>
+      <div class="quote-attr">— Ayusha Sharma, Computer Science '29 · Peer Academic Coach</div>
+    </div>
+  </section>
+
+  <!-- QUICK LINKS STRIP -->
+  <section class="quicklinks">
+    <div class="container">
+      <div class="section-label">Quick Access</div>
+      <div class="qlinks-grid">
+        <a href="https://www.wright.edu/student-success/academic-support/peer-academic-coaching" target="_blank" class="qlink">
+          <span class="qlink-icon">🧭</span>
+          <span>Schedule PAC Session</span>
+          <span class="qlink-ext">↗</span>
+        </a>
+        <a href="https://www.wright.edu/ucie" target="_blank" class="qlink">
+          <span class="qlink-icon">🌍</span>
+          <span>UCIE – International Office</span>
+          <span class="qlink-ext">↗</span>
+        </a>
+        <a href="https://www.wright.edu/counseling-and-wellness" target="_blank" class="qlink">
+          <span class="qlink-icon">🌿</span>
+          <span>Counseling & Wellness</span>
+          <span class="qlink-ext">↗</span>
+        </a>
+        <a href="https://wright.campuslabs.com/engage/" target="_blank" class="qlink">
+          <span class="qlink-icon">🤝</span>
+          <span>Campus Engage</span>
+          <span class="qlink-ext">↗</span>
+        </a>
+        <a href="https://www.wright.edu/career-services/handshake-login-guide#about" target="_blank" class="qlink">
+          <span class="qlink-icon">💼</span>
+          <span>Handshake – Jobs</span>
+          <span class="qlink-ext">↗</span>
+        </a>
+        <a href="https://www.wright.edu/student-success/academic-support/university-writing-center" target="_blank" class="qlink">
+          <span class="qlink-icon">✍️</span>
+          <span>Writing Center</span>
+          <span class="qlink-ext">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+      <div class="footer-credit">Created by Ayusha Sharma · Wright State University · CS '29</div>
+  </footer>
+
+  <script>
+    function toggleNav() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+    // Animate cards on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.card, .qlink, .floating-card').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
