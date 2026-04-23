@@ -1,15 +1,10 @@
-/* ===========================
-   E/PAC WSU International Guide
-   Color palette inspired by ayusha-sharma.github.io
-   Dark, clean, editorial aesthetic
-   =========================== */
 
 :root {
   --bg:       #0d0e11;
   --bg2:      #13151a;
   --bg3:      #1a1d24;
   --border:   #2a2d38;
-  --accent:   #c8a96e;  /* warm gold — from portfolio */
+  --accent:   #c8a96e;  /* warm gold o */
   --accent2:  #7fb3a8;  /* sage teal */
   --text:     #e8e6e1;
   --muted:    #7a7d8a;
