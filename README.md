@@ -57,6 +57,24 @@ It brings together essential academic resources, practical tips, and support sys
 - Campus support services  
 
 ---
+## 📚 References & Learning Resources
+
+### JavaScript
+- [MDN Web Docs — Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) — Used to implement the responsive navigation toggle
+- [W3Schools — Responsive Top Navigation](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) — Referenced for mobile hamburger menu structure
+- [MDN Web Docs — Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) — Used to implement scroll-reveal animations on cards
+- [web.dev — IntersectionObserver](https://web.dev/articles/intersectionobserver) — Referenced for understanding scroll-based visibility detection
+
+### CSS & Design
+- [Google Fonts — DM Sans & DM Serif Display](https://fonts.google.com/) — Typography used throughout the site
+- [MDN Web Docs — CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) — Referenced for animation delay variables
+- [MDN Web Docs — CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) — Used for card and layout structure
+
+### Content Resources
+- [Wright State University — Peer Academic Coaching](https://www.wright.edu/student-success/academic-support/peer-academic-coaching)
+- [Wright State University — UCIE](https://www.wright.edu/ucie)
+
+---
 
 ## 👩‍💻 Author
 
