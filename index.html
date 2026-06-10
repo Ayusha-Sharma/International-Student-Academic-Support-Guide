@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WSU International Student Guide</title>
+  <meta charset="UTF-8" />   <!-- Makes sure special characters display correctly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <!-- Makes the site work properly on mobile screens -->
+  <title>WSU International Student Guide</title> <!-- What shows on the browser tab -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <!-- Loads Google Fonts — DM Serif for headings, DM Sans for body text -->
+  
+  <link rel="stylesheet" href="style.css" />     <!-- Links your CSS file to this HTML page -->
 </head>
 <body>
 
   <!-- NAV -->
   <nav class="nav">
+     <!-- Logo on the left — links back to homepage -->
     <a href="index.html" class="nav-logo">International Student Academic Support Guide <span>WSU</span></a>
+    
+     <!-- Navigation links -->
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="resources.html">Academic Resources</a></li>
@@ -20,6 +25,8 @@
       <li><a href="pac.html">PAC Guide</a></li>
       <li><a href="tools.html">Helpful Tools</a></li>
     </ul>
+    
+    <!-- Hamburger button — only shows on mobile(☰) -->
     <button class="nav-toggle" onclick="toggleNav()">☰</button>
   </nav>
 
@@ -93,7 +100,7 @@
     </div>
   </section>
 
-  <!-- QUOTE / HUMAN TOUCH -->
+  <!-- QUOTE -->
   <section class="quote-section">
     <div class="container">
       <blockquote>
@@ -151,7 +158,7 @@
   <script>
     function toggleNav() {
       document.querySelector('.nav-links').classList.toggle('open');
-    }
+    }   // This adds/removes the class "open" on the nav links, CSS then shows/hides them based on that class
     // Animate cards on scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
