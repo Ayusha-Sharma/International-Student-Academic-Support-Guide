@@ -58,15 +58,6 @@ It brings together essential academic resources, practical tips, and support sys
 
 ---
 
-## 💡 Future Improvements
-
-- Add interactive features  
-- Include university-specific resources  
-- Expand student well-being content  
-- Add real student experiences  
-
----
-
 ## 👩‍💻 Author
 
 **Ayusha Sharma**  
