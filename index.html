@@ -115,7 +115,9 @@
     <div class="container">
       <div class="section-label">Quick Access</div>
       <div class="qlinks-grid">
-        <a href="https://www.wright.edu/student-success/academic-support/peer-academic-coaching" target="_blank" class="qlink">
+        
+<!-- External websites — always add target="_blank" to open in new tab -->
+        <a href="https://www.wright.edu/student-success/academic-support/peer-academic-coaching" target="_blank" class="qlink">  
           <span class="qlink-icon">🧭</span>
           <span>Schedule PAC Session</span>
           <span class="qlink-ext">↗</span>
@@ -161,10 +163,23 @@
     }   // This adds/removes the class "open" on the nav links, CSS then shows/hides them based on that class
     
     // Animate cards on scroll
+    // Step 1: Create the observer
+    
     const observer = new IntersectionObserver((entries) => {
+      // "entries" = list of elements being watched
+
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+      // isIntersecting = true when element is visible on screen
+      // Adds "visible" class → triggers the CSS animation
+      
     }, { threshold: 0.1 });
-    document.querySelectorAll('.card, .qlink, .floating-card').forEach(el => observer.observe(el));
+    // threshold: 0.1 = trigger when 10% of the element is on screen
+
+    // Step 2: Tell the observer WHICH elements to watch
+    document.querySelectorAll('.card, .qlink, .floating-card').forEach(el =>{
+      observer.observe(el);
+       // Start watching each card
+    });
   </script>
 </body>
 </html>
