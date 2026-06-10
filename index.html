@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <!-- Loads Google Fonts — DM Serif for headings, DM Sans for body text -->
   
-  <link rel="stylesheet" href="style.css" />     <!-- Links your CSS file to this HTML page -->
+  <link rel="stylesheet" href="style.css" />     <!-- Links the CSS file to this HTML page -->
 </head>
 <body>
 
@@ -159,6 +159,7 @@
     function toggleNav() {
       document.querySelector('.nav-links').classList.toggle('open');
     }   // This adds/removes the class "open" on the nav links, CSS then shows/hides them based on that class
+    
     // Animate cards on scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
