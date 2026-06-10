@@ -119,7 +119,7 @@ strong { font-weight: 600; color: var(--white); }
 
 
 /* ── MOBILE NAV ── */
-@media (max-width: 720px) {   /* This block ONLY applies on screens smaller than 768px */
+@media (max-width: 720px) {   /* This block ONLY applies on screens smaller than 720px */
   .nav-toggle { display: block; }
   .nav-links {
     display: none;     /* Hide links by default on mobile */
