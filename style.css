@@ -73,11 +73,12 @@ strong { font-weight: 600; color: var(--white); }
   background: rgba(13,14,17,0.92);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex;    /* Puts logo and links side by side */
+  align-items: center;  /* Vertically centered */
+  justify-content: space-between;  /* Logo left, links right */
   padding: 0 32px;
-  z-index: 100;
+  z-index: 100;  /* Stays above other content */
+
 }
 
 .nav-logo {
@@ -90,8 +91,8 @@ strong { font-weight: 600; color: var(--white); }
 
 .nav-links {
   display: flex;
-  gap: 32px;
-  list-style: none;
+  gap: 32px;    /* Space between links */
+  list-style: none;  /* Removes bullet points */
 }
 
 .nav-links a {
@@ -103,8 +104,10 @@ strong { font-weight: 600; color: var(--white); }
 }
 .nav-links a:hover,
 .nav-links a.active { color: var(--white); }
-.nav-links a.active { color: var(--accent); }
+.nav-links a.active { color: var(--accent); }  /* Underlines the current page link */
 
+
+/* Hide hamburger on desktop */
 .nav-toggle {
   display: none;
   background: none;
@@ -114,27 +117,29 @@ strong { font-weight: 600; color: var(--white); }
   cursor: pointer;
 }
 
-@media (max-width: 720px) {
+
+/* ── MOBILE NAV ── */
+@media (max-width: 720px) {   /* This block ONLY applies on screens smaller than 768px */
   .nav-toggle { display: block; }
   .nav-links {
-    display: none;
+    display: none;     /* Hide links by default on mobile */
     position: absolute;
     top: var(--nav-h);
     left: 0; right: 0;
     background: var(--bg2);
-    flex-direction: column;
+    flex-direction: column;  /* Stack links vertically */
     padding: 20px 32px;
     gap: 16px;
     border-bottom: 1px solid var(--border);
   }
-  .nav-links.open { display: flex; }
+  .nav-links.open { display: flex; }   /* Show links when hamburger is clicked */
 }
 
 /* ══════════════════════════════
    HERO
 ══════════════════════════════ */
 .hero {
-  min-height: 100vh;
+  min-height: 100vh;     /* Takes up most of the screen */
   padding-top: var(--nav-h);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -178,12 +183,14 @@ strong { font-weight: 600; color: var(--white); }
 .hero-title {
   font-family: var(--font-display);
   font-size: clamp(2.6rem, 5vw, 4rem);
+     /* clamp = minimum, preferred, maximum size */
+    /* Font scales with screen size automatically */
   font-weight: 400;
   color: var(--white);
   line-height: 1.12;
   margin-bottom: 24px;
 }
-.hero-title em { color: var(--accent); display: block; }
+.hero-title em { color: var(--accent); display: block; } 
 
 .hero-sub {
   color: var(--muted);
@@ -266,6 +273,8 @@ strong { font-weight: 600; color: var(--white); }
 .cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  /* auto-fit = as many columns as fit */
+  /* minmax = each column min 240px, max equal share */
   gap: 20px;
 }
 
@@ -276,13 +285,14 @@ strong { font-weight: 600; color: var(--white); }
   border-radius: var(--radius-lg);
   padding: 36px 28px;
   position: relative;
-  opacity: 0;
-  transform: translateY(16px);
+  opacity: 0;    /* Start invisible */
+  transform: translateY(16px);  /* Start slightly below */
   transition: opacity 0.5s ease, transform 0.5s ease, border-color 0.2s;
 }
-.card.visible { opacity: 1; transform: none; }
+.card.visible { opacity: 1; transform: none; }  /* Fade in */
 .card:hover { border-color: var(--accent); }
 .card:hover .card-arrow { color: var(--accent); transform: translateX(4px); }
+ /* Smooth hover effect */
 
 .card-num {
   font-size: 11px;
